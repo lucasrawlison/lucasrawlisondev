@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Github, Linkedin, Mail, Phone } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
+import noImg from "@/src/imgs/noImg.jpg"
 
 export default function Home() {
   return (
@@ -69,14 +70,17 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8 text-center">Meus Projetos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Projeto 1 */}
-            <Card>
-              <Image
-                src="/placeholder.svg?height=200&width=400"
-                alt="Imagem do Projeto 1"
-                width={400}
-                height={200}
-                className="w-full h-48 object-cover"
-              />
+            <Card className=" hover:scale-105 transition-transform">
+              <div className="w-full h-[200px] relative">
+                <Image
+                  src={noImg}
+                  alt="Imagem do Projeto 1"
+                  width={400}
+                  height={200}
+                  className="w-full h-48 object-cover z-0 absolute"
+                />
+                <div className=" absolute bg-black h-full w-full z-10 opacity-35"></div>
+              </div>
               <CardHeader>
                 <CardTitle>Calculadora em Next.js</CardTitle>
                 <CardDescription>
@@ -86,71 +90,121 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="mb-4">
-                  JavaScript, TypeSript, CSS, Next.js
-                </p>
+                <p className="mb-4">JavaScript, TypeSript, CSS, Next.js</p>
                 <div className="w-full flex justify-between">
-
-                <Button variant="outline" asChild>
-                  <a href="https://next-calculator-mauve.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    Ver no GitHub
-                  </a>
-                </Button>
-                <Button variant="outline" asChild>
-                  <a href="https://next-calculator-mauve.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    Acessar Projeto
-                  </a>
-                </Button>
+                  <Button variant="outline" asChild>
+                    <a
+                      href="https://github.com/lucasrawlison/next-calculator"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver no GitHub
+                    </a>
+                  </Button>
+                  <Button variant="outline" asChild>
+                    <a
+                      href="https://next-calculator-mauve.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Acessar Projeto
+                    </a>
+                  </Button>
                 </div>
-
               </CardContent>
             </Card>
             {/* Projeto 2 */}
-            <Card>
-              <Image
-                src="/placeholder.svg?height=200&width=400"
-                alt="Imagem do Projeto 1"
-                width={400}
-                height={200}
-                className="w-full h-48 object-cover"
-              />
+            <Card className=" hover:scale-105 transition-transform">
+              <div className="w-full h-[200px] relative">
+                <Image
+                  src={noImg}
+                  alt="Imagem do Projeto 1"
+                  width={400}
+                  height={200}
+                  className="w-full h-48 object-cover z-0 absolute"
+                />
+                <div className=" absolute bg-black h-full w-full z-10 opacity-35"></div>
+              </div>
               <CardHeader>
-                <CardTitle>Projeto 1</CardTitle>
-                <CardDescription>Breve descrição do projeto</CardDescription>
+                <CardTitle>
+                  Consultor de Clima OpenWeather em HTML, JS e PHP
+                </CardTitle>
+                <CardDescription>
+                  Este é um projeto que demonstra a capacidade de mostrar
+                  informações climáticas com base na localização atual do
+                  usuário. Ele utiliza a função de geolocalização do navegador
+                  para obter as coordenadas geográficas do usuário e, em
+                  seguida, faz uma solicitação fetch para a API OpenWeather para
+                  obter dados climáticos atualizados.
+                </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="mb-4">
-                  Detalhes do projeto, tecnologias usadas, etc.
-                </p>
-                <Button variant="outline" asChild>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    Ver Projeto
-                  </a>
-                </Button>
+                <p className="mb-4">JavaScript, TypeSript, CSS, Next.js</p>
+                <div className="w-full flex justify-between">
+                  <Button variant="outline" asChild>
+                    <a
+                      href="https://github.com/lucasrawlison/Consultor-de-clima/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver no GitHub
+                    </a>
+                  </Button>
+                  <Button variant="outline" asChild>
+                    <a
+                      href="https://lucasrawlison.github.io/Consultor-de-clima/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Acessar Projeto
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
             {/* Projeto 3 */}
-            <Card>
-              <Image
-                src="/placeholder.svg?height=200&width=400"
-                alt="Imagem do Projeto 1"
-                width={400}
-                height={200}
-                className="w-full h-48 object-cover"
-              />
+            <Card className=" hover:scale-105 transition-transform">
+              <div className="w-full h-[200px] relative">
+                <Image
+                  src={noImg}
+                  alt="Imagem do Projeto 1"
+                  width={400}
+                  height={200}
+                  className="w-full h-48 object-cover z-0 absolute"
+                />
+                <div className=" absolute bg-black h-full w-full z-10 opacity-35"></div>
+              </div>
               <CardHeader>
-                <CardTitle>Projeto 1</CardTitle>
-                <CardDescription>Breve descrição do projeto</CardDescription>
+                <CardTitle>Gerenciador escolar</CardTitle>
+                <CardDescription>
+                  Projeto destinado a criar um gerenciador escolar. Com a
+                  finalidade de organizar todo o âmbito escolar. Funcionalidades
+                  e módulos desde a diretoria até a área do aluno.
+                </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="mb-4">
-                  Detalhes do projeto, tecnologias usadas, etc.
-                </p>
-                <Button variant="outline" asChild>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    Ver Projeto
-                  </a>
-                </Button>
+                <p className="mb-4">JavaScript, TypeSript, CSS, Next.js</p>
+                <div className="w-full flex justify-center items-center">
+                  <p>Em desenvolvimento</p>
+                  {/* <Button variant="outline" asChild>
+                    <a
+                      href="https://next-calculator-mauve.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver no GitHub
+                    </a>
+                  </Button>
+                  <Button variant="outline" asChild>
+                    <a
+                      href="https://next-calculator-mauve.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Acessar Projeto
+                    </a>
+                  </Button> */}
+                </div>
               </CardContent>
             </Card>
           </div>
