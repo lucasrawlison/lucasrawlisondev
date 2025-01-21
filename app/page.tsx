@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Github, Linkedin, Mail, Phone } from "lucide-react"
+import { Github, Linkedin, Mail, Phone, ArrowDown } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import noImg from "@/src/imgs/noImg.jpg"
 
@@ -43,9 +43,15 @@ export default function Home() {
           <p className="text-xl text-muted-foreground mb-8">
             Desenvolvedor de Software
           </p>
-          <Button asChild>
-            <a href="#contato">Entre em contato</a>
+          <Button className="h-auto w-[200px]" asChild>
+            <a href="#contato" className="flex flex-col">
+            <span>Entre em contato</span>
+            </a>
           </Button>
+          <div className="mt-4 w-full flex items-center justify-center">
+
+            <ArrowDown className=" animate-bounce"/>
+          </div>
         </div>
       </section>
 
