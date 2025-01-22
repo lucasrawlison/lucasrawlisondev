@@ -4,6 +4,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Github, Linkedin, Mail, Phone, ArrowDown } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import noImg from "@/src/imgs/noImg.jpg"
+import calculadoraPrint from "@/src/imgs/calculadoraPrint.jpg"
+import climaPrint from "@/src/imgs/climaPrint.png"
+
+
 
 export default function Home() {
   return (
@@ -76,14 +80,14 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8 text-center">Meus Projetos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Projeto 1 */}
-            <Card className=" hover:scale-105 transition-transform">
-              <div className="w-full h-[200px] relative">
+            <Card className="group hover:scale-105 transition-transform">
+              <div className="w-full h-[200px] relative overflow-hidden items-center">
                 <Image
-                  src={noImg}
+                  src={calculadoraPrint}
                   alt="Imagem do Projeto 1"
                   width={400}
                   height={200}
-                  className="w-full h-48 object-cover z-0 absolute"
+                  className="group-hover:blur-sm transition-all duration-300 w-full h-full object-cover z-0 absolute"
                 />
                 <div className=" absolute bg-black h-full w-full z-10 opacity-35"></div>
               </div>
@@ -98,7 +102,7 @@ export default function Home() {
               <CardContent>
                 <p className="mb-4">JavaScript, TypeSript, CSS, Next.js</p>
                 <div className="w-full flex justify-between">
-                  <Button variant="outline" asChild>
+                  <Button variant="secondary" asChild>
                     <a
                       href="https://github.com/lucasrawlison/next-calculator"
                       target="_blank"
@@ -107,7 +111,7 @@ export default function Home() {
                       Ver no GitHub
                     </a>
                   </Button>
-                  <Button variant="outline" asChild>
+                  <Button asChild>
                     <a
                       href="https://next-calculator-mauve.vercel.app/"
                       target="_blank"
@@ -120,16 +124,16 @@ export default function Home() {
               </CardContent>
             </Card>
             {/* Projeto 2 */}
-            <Card className=" hover:scale-105 transition-transform">
+            <Card className="group hover:scale-105 transition-transform">
               <div className="w-full h-[200px] relative">
                 <Image
-                  src={noImg}
+                  src={climaPrint}
                   alt="Imagem do Projeto 1"
                   width={400}
                   height={200}
                   className="w-full h-48 object-cover z-0 absolute"
                 />
-                <div className=" absolute bg-black h-full w-full z-10 opacity-35"></div>
+                <div className="group-hover:blur-sm transition-all duration-300 absolute bg-black h-full w-full z-10 opacity-35"></div>
               </div>
               <CardHeader>
                 <CardTitle>
@@ -147,7 +151,7 @@ export default function Home() {
               <CardContent>
                 <p className="mb-4">JavaScript, TypeSript, CSS, Next.js</p>
                 <div className="w-full flex justify-between">
-                  <Button variant="outline" asChild>
+                  <Button variant="secondary" asChild>
                     <a
                       href="https://github.com/lucasrawlison/Consultor-de-clima/"
                       target="_blank"
@@ -156,7 +160,7 @@ export default function Home() {
                       Ver no GitHub
                     </a>
                   </Button>
-                  <Button variant="outline" asChild>
+                  <Button asChild>
                     <a
                       href="https://lucasrawlison.github.io/Consultor-de-clima/"
                       target="_blank"
