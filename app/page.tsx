@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Github, Linkedin, Mail, Phone, ArrowDown } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
-import noImg from "@/src/imgs/noImg.jpg"
 import calculadoraPrint from "@/src/imgs/calculadoraPrint.jpg"
 import climaPrint from "@/src/imgs/climaPrint.png"
+import todoapp from "@/src/imgs/todoapp.png"
 
 
 
@@ -49,12 +49,11 @@ export default function Home() {
           </p>
           <Button className="h-auto w-[200px]" asChild>
             <a href="#contato" className="flex flex-col">
-            <span>Entre em contato</span>
+              <span>Entre em contato</span>
             </a>
           </Button>
           <div className="mt-4 w-full flex items-center justify-center">
-
-            <ArrowDown className=" animate-bounce"/>
+            <ArrowDown className=" animate-bounce" />
           </div>
         </div>
       </section>
@@ -101,7 +100,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="mb-4">JavaScript, TypeSript, CSS, Next.js</p>
-                <div className="w-full flex justify-between">
+                <div className="w-full flex justify-between items-end h-24">
                   <Button variant="secondary" asChild>
                     <a
                       href="https://github.com/lucasrawlison/next-calculator"
@@ -176,7 +175,7 @@ export default function Home() {
             <Card className=" hover:scale-105 transition-transform">
               <div className="w-full h-[200px] relative">
                 <Image
-                  src={noImg}
+                  src={todoapp}
                   alt="Imagem do Projeto 1"
                   width={400}
                   height={200}
@@ -185,35 +184,34 @@ export default function Home() {
                 <div className=" absolute bg-black h-full w-full z-10 opacity-35"></div>
               </div>
               <CardHeader>
-                <CardTitle>Gerenciador escolar</CardTitle>
+                <CardTitle>Gerenciador de Tarefas</CardTitle>
                 <CardDescription>
-                  Projeto destinado a criar um gerenciador escolar. Com a
-                  finalidade de organizar todo o âmbito escolar. Funcionalidades
-                  e módulos desde a diretoria até a área do aluno.
+                  Projeto destinado a criar um gerenciador de tarefas pessoais.
+                  Com a finalidade de organizar todo o tempo profissional e
+                  pessoal em um só lugar.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="mb-4">JavaScript, TypeSript, CSS, Next.js</p>
-                <div className="w-full flex justify-center items-center">
-                  <p>Em desenvolvimento</p>
-                  {/* <Button variant="outline" asChild>
+                <div className="w-full flex justify-between items-end h-24">
+                  <Button variant="secondary" asChild>
                     <a
-                      href="https://next-calculator-mauve.vercel.app/"
+                      href="https://github.com/lucasrawlison/login/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       Ver no GitHub
                     </a>
                   </Button>
-                  <Button variant="outline" asChild>
+                  <Button asChild>
                     <a
-                      href="https://next-calculator-mauve.vercel.app/"
+                      href="https://login-two-mocha.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       Acessar Projeto
                     </a>
-                  </Button> */}
+                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -238,7 +236,7 @@ export default function Home() {
             </Button>
             <Button variant="outline" size="icon" asChild>
               <a
-                href="https://linkedin.com/in/seu-perfil"
+                href="http://linkedin.com/in/lucasrawlison"
                 target="_blank"
                 rel="noopener noreferrer"
               >
