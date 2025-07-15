@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail, Phone, ArrowDown } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import calculadoraPrint from "@/src/imgs/calculadoraPrint.jpg"
 import climaPrint from "@/src/imgs/climaPrint.png"
-import todoapp from "@/src/imgs/todoapp.png"
+import hostel from "@/src/imgs/hostel.png"
 
 
 
@@ -79,14 +79,14 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-8 text-center">Meus Projetos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Projeto 1 */}
-            <Card className="group hover:scale-105 transition-transform">
+            <Card className="hover:scale-105 transition-transform overflow-hidden">
               <div className="w-full h-[200px] relative overflow-hidden items-center">
                 <Image
                   src={calculadoraPrint}
                   alt="Imagem do Projeto 1"
                   width={400}
                   height={200}
-                  className="group-hover:blur-sm transition-all duration-300 w-full h-full object-cover z-0 absolute"
+                  className=" transition-all duration-300 w-full h-full object-cover z-0 absolute"
                 />
                 <div className=" absolute bg-black h-full w-full z-10 opacity-35"></div>
               </div>
@@ -123,7 +123,7 @@ export default function Home() {
               </CardContent>
             </Card>
             {/* Projeto 2 */}
-            <Card className="group hover:scale-105 transition-transform">
+            <Card className="group hover:scale-105 transition-transform overflow-hidden">
               <div className="w-full h-[200px] relative">
                 <Image
                   src={climaPrint}
@@ -172,31 +172,33 @@ export default function Home() {
               </CardContent>
             </Card>
             {/* Projeto 3 */}
-            <Card className=" hover:scale-105 transition-transform">
+            <Card className="hover:scale-105 transition-transform overflow-hidden">
               <div className="w-full h-[200px] relative">
                 <Image
-                  src={todoapp}
+                  src={hostel}
                   alt="Imagem do Projeto 1"
                   width={400}
                   height={200}
-                  className="w-full h-48 object-cover z-0 absolute"
+                  className=" w-full h-48 object-cover z-0 absolute"
                 />
                 <div className=" absolute bg-black h-full w-full z-10 opacity-35"></div>
               </div>
               <CardHeader>
-                <CardTitle>Gerenciador de Tarefas</CardTitle>
+                <CardTitle>Site de hotel/aluguel</CardTitle>
                 <CardDescription>
-                  Projeto destinado a criar um gerenciador de tarefas pessoais.
-                  Com a finalidade de organizar todo o tempo profissional e
-                  pessoal em um só lugar.
+                  Projeto de um site de hotel/aluguel, sendo possível
+                  visualizar os quartos disponíveis, fazer reservas e entrar em
+                  contato com o hotel. O site é responsivo e adaptável a diferentes
+                  tamanhos de tela, garantindo uma experiência de usuário
+                  consistente em dispositivos móveis e desktops.
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="mb-4">JavaScript, TypeSript, CSS, Next.js</p>
+                <p className="mb-4">JavaScript, TypeSript, CSS com Tailwind, Next.js, Prisma, Neon</p>
                 <div className="w-full flex justify-between items-end h-24">
                   <Button variant="secondary" asChild>
                     <a
-                      href="https://github.com/lucasrawlison/login/"
+                      href="https://github.com/lucasrawlison/hostel-website"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -205,9 +207,10 @@ export default function Home() {
                   </Button>
                   <Button asChild>
                     <a
-                      href="https://rawlison-todo-app.vercel.app/"
+                      href="https://hostelwebsitepb.vercel.app/"
                       target="_blank"
                       rel="noopener noreferrer"
+                      
                     >
                       Acessar Projeto
                     </a>
